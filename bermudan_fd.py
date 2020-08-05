@@ -79,9 +79,9 @@ if __name__ == "__main__":
     (Smin, Smax, Ns, Nt) = (0, 4*np.maximum(S,K), 200, 200)
     (theta, alpha, epsilon) = (0.5, 1.5, 1e-6)
 
-    ex_tvec1 = np.arange(0.5, 1, 0.5)        # 每六个月可执行权利
-    ex_tvec2 = np.arange(0.25, 1, 0.25)      # 每三个月可执行权利
-    ex_tvec3 = np.arange(1/12, 1, 1/12)      # 每一个月可执行权利
+    ex_tvec1 = np.arange(0.5, 1, 0.5)        # execute every 6 month
+    ex_tvec2 = np.arange(0.25, 1, 0.25)      # execute every 3 month
+    ex_tvec3 = np.arange(1/12, 1, 1/12)      # execute every 1 month
 
     berm_opt1 = SOR_bermudan(S, K, r, q, T, sigma, option_type, Smin, Smax, Ns, Nt, theta, alpha, epsilon, ex_tvec1)
     berm_opt2 = SOR_bermudan(S, K, r, q, T, sigma, option_type, Smin, Smax, Ns, Nt, theta, alpha, epsilon, ex_tvec2)

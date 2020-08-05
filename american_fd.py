@@ -125,5 +125,6 @@ if __name__ == "__main__":
     (S, K, r, q, T, sigma, option_type) = (50, 60, 0.03, 0.01, 1, 0.4, 'put')
     (Smin, Smax, Ns, Nt) = (0, 4*np.maximum(S,K), 200, 200)
     (theta, alpha, epsilon) = (0.5, 1.5, 1e-6)
+    
     amer_opt = SOR(S, K, r, q, T, sigma, option_type, Smin, Smax, Ns, Nt, theta, alpha, epsilon)
     print(amer_opt.price())
