@@ -54,7 +54,7 @@ There are two ways:
 
 #### successive over-relaxation, SOR
 
-![](example\iteration.png)
+<img src="example\iteration.png" style="zoom: 45%;" />
 
 ### Penalty Method
 
@@ -68,4 +68,4 @@ Where
 
 ## Bermudan PDE
 
-![](example\9.png)
+<img src="example\9.png" style="zoom: 45%;" />
